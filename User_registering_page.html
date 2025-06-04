@@ -45,7 +45,7 @@
     </style>
 </head>
 <body>
-    <form action="/register" method="post">
+    <form id="registerForm">
         <h1 >Register</h1>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -58,5 +58,12 @@
         <button type="submit">Register</button>
     </form>
     </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission
+        window.location.href = "index.html"; // Redirect to another page
+        });
+    </script>
 </body>
 </html>
