@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <style>
+      /* Internal CSS for the login page */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f2f5; /* Light gray background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .login-container {
+        background-color: #ffffff; /* White container background */
+        padding: 40px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 100%;
+        max-width: 400px; /* Max width of the login box */
+        box-sizing: border-box;
+      }
+
+      .login-container h1 {
+        color: #1c1e21; /* Dark gray text */
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      .input-group label {
+        display: block;
+        color: #4b4f56; /* Medium gray text */
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #dddfe2; /* Light border */
+        border-radius: 6px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+        font-size: 16px;
+      }
+
+      .input-group input:focus {
+        outline: none;
+        border-color: #1877f2; /* Blue border on focus (like Facebook) */
+        box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+      }
+
+      .btn-login {
+        width: 100%;
+        padding: 12px;
+        background-color: #1877f2; /* Blue button */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-login:hover {
+        background-color: #166fe5; /* Darker blue on hover */
+      }
+
+      .links {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .links a {
+        color: #1877f2; /* Blue links */
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      .divider {
+        text-align: center;
+        margin: 20px 0;
+        color: #8a8d91; /* Light gray for divider text */
+        font-size: 12px;
+      }
+
+      .btn-create-account {
+        width: 100%;
+        padding: 12px;
+        background-color: #42b72a; /* Green button (like Facebook create account) */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center; /* Ensure text is centered if used as an <a> tag */
+        display: inline-block; /* For <a> tag to respect padding and width */
+        box-sizing: border-box;
+      }
+
+      .btn-create-account:hover {
+        background-color: #36a420; /* Darker green on hover */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 480px) {
+        .login-container {
+          margin: 20px;
+          padding: 25px;
+        }
+
+        .login-container h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>User Login</h1>
+      <form action="#" method="POST">
+        <!-- Replace # with your backend script URL -->
+        <div class="input-group">
+          <label for="username">Email or Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Enter your email or username"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          />
+        </div>
+        <button type="submit" class="btn-login">Log In</button>
+      </form>
+      <div class="links">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <div class="divider">or</div>
+      <a href="#" class="btn-create-account">Create New Account</a>
+    </div>
+  </body>
+</html>
