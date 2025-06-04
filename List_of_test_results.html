@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Test Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
+
+  <div class="w-full max-w-4xl p-6 bg-white rounded-2xl shadow-lg">
+    <h1 class="text-3xl font-bold text-center text-indigo-700 mb-6">Typing Test Results</h1>
+
+    <table class="min-w-full table-auto border border-gray-300 rounded-lg overflow-hidden">
+      <thead class="bg-indigo-100 text-indigo-800">
+        <tr>
+          <th class="px-4 py-3 text-left">Date</th>
+          <th class="px-4 py-3 text-left">Speed (WPM)</th>
+          <th class="px-4 py-3 text-left">Accuracy (%)</th>
+          <th class="px-4 py-3 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <tr class="hover:bg-gray-50">
+          <td class="px-4 py-3">2025-06-04</td>
+          <td class="px-4 py-3">72</td>
+          <td class="px-4 py-3">96%</td>
+          <td class="px-4 py-3 space-x-2">
+            <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-sm">View</button>
+            <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 text-sm">Delete</button>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="px-4 py-3">2025-06-03</td>
+          <td class="px-4 py-3">68</td>
+          <td class="px-4 py-3">92%</td>
+          <td class="px-4 py-3 space-x-2">
+            <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-sm">View</button>
+            <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 text-sm">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
